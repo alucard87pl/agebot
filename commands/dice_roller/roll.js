@@ -11,6 +11,7 @@ module.exports = {
 		r = new Roll()
 		console.log(r.pool())
 		pool = r.pool().toString()
+		total = r.sum().toString()
 		dbl = r.hasDoubles()
 		stn = r.ds().toString()
 		const [d1, d2, ds] = await Promise.all(
@@ -31,6 +32,7 @@ module.exports = {
 			.setAuthor({ name: 'AGEbot', iconURL: interaction.client.user.avatarURL() })
 			.addFields(
 				{ name: 'Result', value: pool, inline: true },
+				{ name: 'Total', value: total, inline: true },
 				{ name: 'Doubles?', value: dbl ? "✨ YAY! ✨" : "😥 Nay...", inline: true },
 				dbl ?
 					{ name: 'Stunt Points', value: dbl ? stn : "0", inline: true }

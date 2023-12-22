@@ -24,7 +24,6 @@ module.exports = async function diceRecolor(result, color) {
   setColor(xmlDoc.getElementsByClassName('shadow'), shadeColor);
   setColor(xmlDoc.getElementsByClassName('dot'), dotColor);
   const changedSVG = new XMLSerializer().serializeToString(xmlDoc).trim();
-  console.log(`result:${result}`, changedSVG)
   const pngBuffer = await svg2png(new Buffer.from(changedSVG),
     {
       width: 100,
