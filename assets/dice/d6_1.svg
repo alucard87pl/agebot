@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46">
+    <g id="Layer_1-2" data-name="Layer 1">
+        <rect class="primary" width="283.46" height="283.46" rx="28.6" />
+        <path class="shadow"
+            d="M283.46,28.59V254.86a28.6,28.6,0,0,1-28.6,28.6H28.6a28.51,28.51,0,0,1-20.23-8.38L275.09,8.37A28.52,28.52,0,0,1,283.46,28.59Z" />
+        <circle class="dot" cx="141.73" cy="141.73" r="28.35" />
+    </g>
+</svg>
